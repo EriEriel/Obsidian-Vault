@@ -1,3 +1,9 @@
+---
+id: react-next.js
+aliases: []
+tags: []
+---
+
 # React + Next.js
 2026-03-14  #learn #react #nextjs #frontend #javascript
 
@@ -29,6 +35,7 @@ function Header({ title }) {
   return <h1>{title}</h1>;
 }
 ```
+Mental model to remember here is usually in page.tsx(homepage) which is server side, it querry DB as prop into functions calls that use client side to display stuff
 
 #### JSX land vs JavaScript land
 - JSX land: HTML-like syntax
@@ -95,6 +102,7 @@ export default function LikeButton() {
 - `useState` and event handlers only work in Client Components — adding them to a Server Component throws
 
 ## links
+- [[react-hook]]
 - [[javascript]]
 - [[tailwindcss]]
 - [[http-rest-api]]

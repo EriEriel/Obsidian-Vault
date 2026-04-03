@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "f6aef65a8ef30f0d",
+        "id": "ba426e6d58131947",
         "type": "tabs",
         "children": [
           {
-            "id": "f21e93912a8130d3",
+            "id": "f234c9abfb042847",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "templates/scratch.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "scratch"
+            }
+          },
+          {
+            "id": "c050ab0b90f5a681",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "typescript.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "typescript"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,15 +195,39 @@
       "bases:Create new base": false
     }
   },
-  "active": "f21e93912a8130d3",
+  "active": "c050ab0b90f5a681",
   "lastOpenFiles": [
-    "Database/ORM/Prisma/prisma-entry-methods.md",
-    "uni-courses/mth1101-calculus.md~",
-    "arch-linux.md",
-    "react.md",
-    "javascript.md",
     "git.md",
-    "bug-prisma-client-import.md",
-    "bug-audio-pipewire-auto-null.md"
+    "code-anatomy/cloudinary-api-route.md",
+    "code-anatomy/cloudinary-api-route.md~",
+    "templates/code-anatomy.md",
+    "templates/bug.md",
+    "templates/scratch.md",
+    "templates/project.md",
+    "templates/learn.md",
+    "templates/daily.md",
+    "Untitled",
+    "prisma.md",
+    "authentication/staeless-authentication.md",
+    "authentication/javscript-web-token.md~",
+    "stateless-authentication.md",
+    "authentication/javscript-web-token.md",
+    "react.md",
+    "c-memory-management.md",
+    "Integration.md",
+    "authentication/nextauthjs.md~",
+    "react-next.js.md",
+    "authentication/nextauthjs.md",
+    "Test 1.md",
+    "Programing Language/C/c-fundamentals.md",
+    "Bug/bug-prisma-p1000-user-denied.md",
+    "projects/Library_webapp.md~",
+    "testing.md",
+    "Database/ORM/Prisma/prisma-entry-methods.md",
+    "http-rest-api.md",
+    "xmlhttp-request.md~",
+    "xmlhttp-request.md",
+    "tailwindcss.md",
+    "uni-courses/mth1101-calculus.md~"
   ]
 }

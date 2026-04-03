@@ -70,5 +70,5 @@ Typed superset of JavaScript — compiles to plain JS. Adds static type checking
 
 ## links
 - [[javascript]]
-- [[react]]
+- [[react-next.js]]
 - [[testing]]

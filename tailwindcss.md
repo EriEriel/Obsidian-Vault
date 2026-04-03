@@ -51,6 +51,6 @@ Tailwind is included automatically when using `create-next-app` with the `--tail
 - Purges unused classes in production automatically — don't dynamically construct classnames with string concatenation or they'll get purged
 
 ## links
-- [[react]]
+- [[react-next.js]]
 - [Tailwind CSS Cheatsheet](https://www.webdevultra.com/articles/tailwindcss-cheatsheet-css-equivalents)
 - [Tailwind CSS Colors](https://tailwindcss.com/docs/colors)

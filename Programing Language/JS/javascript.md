@@ -1,3 +1,11 @@
+---
+id: javascript
+aliases: []
+tags:
+  - #learn
+  - #javascript
+---
+
 # JavaScript Deep Dive
 2026-03-13  #learn #javascript #async #fundamentals
 
@@ -5,6 +13,30 @@
 Core JS mechanics — type system, Symbols, BigInt, prototypes, generators, and the async model (Event Loop, Promises, async/await).
 
 ## how it works
+
+### Tenary operator
+Syntax:
+```ts
+  condition ? "value if true" : "value if false"
+
+  // Example 
+  fill = filled ? "currentColor" : "none"
+  // Same as normal if/else
+  if (filled) {
+    fill = "currentColor"
+  } else {
+    fill = "none"
+  }
+```
+Just read the `?` as `if` and : as `else`.
+
+### Nullish coalescing operator `??`
+Returns the right side if the left side is null or undefined:
+```ts
+entry.url ?? undefined
+// same as
+entry.url !== null ? entry.url : undefined
+```
 
 ### equality & type coercion
 | Operation | Primitive | Object |
@@ -104,4 +136,4 @@ const [pineapple, strawberry] = await Promise.all([
 - `async` functions return a Promise even if you don't explicitly return one
 
 ## links
-- [[react]]
+- [[react-next.js]]

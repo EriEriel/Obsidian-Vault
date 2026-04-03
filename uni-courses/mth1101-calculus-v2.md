@@ -16,6 +16,7 @@ Plug in x
   → get 0/0?       → factor and cancel
   → has sqrt?      → conjugate
   → x→∞?          → highest degree wins
+  → still 0/0 or ∞/∞? → L'Hôpital's rule
 
 
 ## algebraic identities used as factoring tools for limits
@@ -81,8 +82,17 @@ Plug in x
 if top degree > bottom → infinity
 if top degree < bottom → 0
 
+5. L'Hôpital's rule - when you still get 0/0 or ∞/∞:
+  differentiate top and bottom separately, then try again
+
+  lim x→∞  ln x / eˣ
+  → (1/x) / eˣ = 1/xeˣ → 0
+
+  **Signal to use:** plug in gives 0/0 or ∞/∞
+  **Do NOT use** if direct substitution or factoring already works
+
 # [[Derivative]] 
-  Slope of the curve at any point=rate of change.
+  Slope of the curve at any point = rate of change.
 
   f(x) = x²
   f'(x) = 2x        ← the derivative
@@ -119,6 +129,12 @@ g = x+1  g' = 1
 
 "low d-high minus high d-low over low squared"
 
+x² / (x+1)
+f = x²   f' = 2x
+g = x+1  g' = 1
+→ (2x(x+1) - x²(1)) / (x+1)²
+= (x²+2x) / (x+1)²
+
 ### Chain rule - function inside function:
 f(g(x))' = f'(g(x)) · g'(x)
 
@@ -127,20 +143,40 @@ outer: u³  → 3u²
 inner: x²+1 → 2x
 → 3(x²+1)² · 2x
 
+### Implicit differentiation - when x and y are mixed:
+- differentiate both sides normally
+- every y term gets × dy/dx attached
+- then isolate dy/dx
+
+  xy + y² = 8
+  differentiate both sides:
+  y + x(dy/dx) + 2y(dy/dx) = 0
+  factor out dy/dx:
+  dy/dx(x + 2y) = -y
+  dy/dx = -y / (x + 2y)
+
+  then plug in the point (x,y) to get the value
+
 ---
 
-## Common function:
-  sin x  →  cos x
-  cos x  → -sin x
-  eˣ     →  eˣ      (same!)
-  ln x   →  1/x
+## Common derivatives to memorize:
+  sin x    →  cos x
+  cos x    → -sin x
+  tan x    →  sec²x
+  eˣ       →  eˣ          (same! never changes)
+  e^(ax)   →  ae^(ax)     ← chain rule attached!
+  ln x     →  1/x
+  arcsin x →  1/√(1-x²)
+  arccos x → -1/√(1-x²)
+  arctan x →  1/(1+x²)
 
 ---
 
 ## One-line memory hook:
-  Power rule   → bring down the power, subtract 1
-  Chain rule   → outside × inside'
-  Product rule → first×second' + second×first'
+  Power rule    → bring down the power, subtract 1
+  Chain rule    → outside × inside'
+  Product rule  → first×second' + second×first'
+  Quotient rule → (bottom×top' - top×bottom') / bottom²
 
 ---
 
@@ -175,11 +211,11 @@ let y=f(x)=x² (Parabola) find f'(x)
 
   y-y1 = m(x-x1)
 
-  Where: m=f'(1) (the slope er calculate)
+  Where: m=f'(1) (the slope we calculate)
   (x1,y1) = The point P(1,3)
 
   ### The formula for normal line
-  Normal line is prependicular to the tangent, so its slope is just flipped and negated.
+  Normal line is perpendicular to the tangent, so its slope is just flipped and negated.
 
   m(normal) = -1/m
 
@@ -199,7 +235,7 @@ let y=f(x)=x² (Parabola) find f'(x)
   = 2
 
   So f'(1)=2 which is the slope of the curve at P(1,3)
-  Now the tengent line - plug into y-y1 = m(x-x1):
+  Now the tangent line - plug into y-y1 = m(x-x1):
 
   - m = 2
   - (x,y) = (1,3)
@@ -208,20 +244,47 @@ let y=f(x)=x² (Parabola) find f'(x)
   y = 2x-2+3
   y = 2x+1 
  
-  Now for the normal line,slope = -1/2
+  Now for the normal line, slope = -1/2
 
   y-3 = -1/2(x-1)
   y = (-1/2)x + 1/2 + 3 = (-1/2)x + 7/2
 
-## [[Integration]]
-  Integration is the reverse of differentiation - instead of find slope, we're finding the **area under the curve**.
+## Inflection points - where curve changes concavity:
+  set f''(x) = 0, solve for x
+  then verify sign of f''(x) changes around each point
+
+  **Example** f(x) = x⁴ - 4x³
+  f'(x)  = 4x³ - 12x²
+  f''(x) = 12x² - 24x = 12x(x-2) = 0
+  → x = 0 and x = 2  ← 2 inflection points
+
+  verify sign changes:
+  - before x=0 (try x=-1): positive
+  - between 0 and 2 (try x=1): negative
+  - after x=2 (try x=3): positive
+  sign changes at both points ✓
+
+## Optimization - finding max/min value:
+  set f'(x) = 0 → solve for x → that's your max/min point
+
+  **Example** (revenue problem)
+  price = 50, passengers = 800
+  every +1 baht → -10 passengers
+
+  R(x) = (50+x)(800-10x)
+       = 40000 + 300x - 10x²
+  R'(x) = 300 - 20x = 0
+  x = 15  → optimal price = 50+15 = 65 baht
+
+# [[Integration]]
+  Integration is the reverse of differentiation - instead of finding slope, we're finding the **area under the curve**.
 
 ### The rule (reverse power rule):
 
   xⁿ -> [(xⁿ⁺¹) / n+1] + C 
 
   "Raise the power by 1, divide by the new power, add C"
-C is just a constant
+  C is just a constant, always add it or teacher takes marks!
 
 **Example.**
   x² -> (x³/3) + C
@@ -229,7 +292,7 @@ C is just a constant
   x  -> (x²/2) + C
   5  -> 5x + C (constant just get x attached)
 
-  ∫ x²+3x+2dx 
+  ∫ x²+3x+2 dx 
 
   x² -> (x³/3)
   3x -> (3x²/2)
@@ -237,3 +300,39 @@ C is just a constant
 
   = (x³/3) + (3x²/2) + 2x + C
 
+### Common integrals to memorize:
+  ∫ sin x dx  = -cos x + C
+  ∫ cos x dx  =  sin x + C
+  ∫ sec²x dx  =  tan x + C
+  ∫ eˣ dx     =  eˣ + C
+  ∫ (1/x) dx  =  ln|x| + C
+
+### Definite integrals - has limits a and b:
+  ∫[a to b] f(x) dx = F(b) - F(a)
+
+  - integrate normally (NO C this time)
+  - plug in top number (b), subtract plugging in bottom number (a)
+
+  **Example** ∫[1 to 2] x² dx
+  = [x³/3] from 1 to 2
+  = (2³/3) - (1³/3)
+  = 8/3 - 1/3 = 7/3
+
+  **tip:** if bottom number is 0, plugging in almost always gives 0, no messy fractions!
+
+### U-substitution - reverse chain rule:
+  use when you see a function AND its derivative inside the integral
+
+  **Steps:**
+  1. let u = inner messy part
+  2. find du
+  3. substitute everything in terms of u
+  4. integrate
+  5. substitute back
+
+  **Example** ∫ cos(√x) / √x dx
+  let u = √x
+  du = 1/(2√x) dx  →  dx/√x = 2 du
+  = ∫ cos(u) · 2 du
+  = 2 sin(u) + C
+  = 2 sin(√x) + C

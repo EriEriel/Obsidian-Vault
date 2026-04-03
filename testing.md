@@ -57,5 +57,5 @@ Writing automated tests to verify code behaves correctly. Unit tests check indiv
 ## links
 - [[typescript]]
 - [[javascript]]
-- [[react]]
+- [[react-next.js]]
 - [[http-rest-api]]
