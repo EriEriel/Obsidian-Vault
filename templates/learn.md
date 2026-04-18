@@ -1,5 +1,11 @@
-# {{title}}
-{{date}}  #learn
+---
+id: learn: {{title}}
+aliases: []
+tags:
+  - #learn
+---
+
+{{date}} Init {{time}}
 
 ## what is it
 
@@ -13,3 +19,4 @@
 ## gotchas
 
 ## links
+

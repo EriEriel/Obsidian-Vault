@@ -1,3 +1,9 @@
+---
+id: kilo-ansi-memory-c-internals
+aliases: []
+tags: []
+---
+
 # Kilo Editor — ANSI Sequences, Memory & C Internals
 2026-03-13  #learn #c #systems #memory #terminal #kilo
 
@@ -218,4 +224,4 @@ write(STDOUT_FILENO, "\x1b[H", 3);
 - Raw mode must be restored on exit — kilo registers an `atexit()` handler for this
 
 ## links
-- [[c-memory-management]]
+[[c-programming-fundamentals]]

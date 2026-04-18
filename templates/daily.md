@@ -1,4 +1,9 @@
-# {{date}}
+---
+id: daily: {{date}}
+aliases: []
+tags:
+  - #daily
+---
 
 ## todo
 - [ ] 

@@ -29,6 +29,16 @@ React Hooks are special functions that allow to use state and other React featur
 - It can only be used in Client Components (files starting with "use client") and must be wrapped in a `<SessionProvider />`.
 **Return** a status enum: "loading", "authenticated", or "unauthenticated".
 
+### useActionState()
+```tsx
+  const [state, formAction, isPending] = useActionState(fn, initialState, permalink?);
+```
+Introduced in React 19 design to simplify state management for forma and asynchronous "Actions" 
+* `state`: The current values of the state(initial State), then whatever the functions is return
+* `formActtion`: A functions that pass into the <form action={formAction}> prop
+* `isPending`: A boolean that is `true` while function is executing
+* `fn`: Action function. It receives `(previousState, formData)` as arguments.
+
 ## example
 ### useState example:
 ```ts
@@ -57,6 +67,34 @@ export default function Profile() {
 }
 ```
 
+### useActionState() example:
+```tsx
+"use client";
+import { useActionState } from "react";
+
+async function updateName(prevState, formData) {
+  const name = formData.get("name");
+  // Simulate API call
+  if (name === "") return { error: "Name is required" };
+  return { success: true, message: `Hello, ${name}!` };
+}
+
+function ProfileForm() {
+  const [state, formAction, isPending] = useActionState(updateName, { message: "" });
+
+  return (
+    <form action={formAction}>
+      <input name="name" />
+      <button type="submit" disabled={isPending}>
+        {isPending ? "Updating..." : "Update"}
+      </button>
+      {state?.error && <p style={{color: 'red'}}>{state.error}</p>}
+      {state?.message && <p>{state.message}</p>}
+    </form>
+  );
+}
+```
+
 ## gotchas
 ### useState 
 It is a Hook, it can only be call at top level of component. Can't be call inside loop or conditions, in order to do that extract mew components and move state into it
@@ -65,5 +103,5 @@ It is a Hook, it can only be call at top level of component. Can't be call insid
 **Server Components**: For Server Components, use `getServerSession` (NextAuth v4) or `auth()` (Auth.js v5) instead of the `useSession` hook.
 **Performance**: While convenient, using `useSession` adds client-side overhead. For better performance and SEO, fetching the session on the server and passing it to the client is often recommended.
 ## links
-- [[react-nextjs]]
 - [useState](https://react.dev/reference/react/useState)
+* [[react-nextjs]]

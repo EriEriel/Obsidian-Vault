@@ -1,5 +1,11 @@
-# code-anatomy: {{title}}
-{{date}} #code-anatomy
+---
+id: code-anatomy: {{title}}
+aliases: []
+tags:
+  - #code-anatomy
+---
+
+{{date}} Init {{time}}
 
 ## what is this  code
 

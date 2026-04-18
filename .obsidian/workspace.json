@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "ba426e6d58131947",
+        "id": "c0e9bb5d8b10aec8",
         "type": "tabs",
         "children": [
           {
-            "id": "f234c9abfb042847",
+            "id": "aba65c988167ff13",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "templates/scratch.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "scratch"
-            }
-          },
-          {
-            "id": "c050ab0b90f5a681",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "typescript.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "typescript"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "neovim",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -195,14 +177,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "c050ab0b90f5a681",
+  "active": "aba65c988167ff13",
   "lastOpenFiles": [
+    "neovim/luasnip.md~",
+    "http-rest-api.md",
+    "neovim/luasnip.md",
+    "templates/scratch.md",
+    "react-nextjs.md",
+    "prisma-7-postgresql-nextjs-setup.md",
+    "bug-bug-report-missing-image-on-save-edit.md",
+    "Database/ORM/Prisma/prisma.md",
+    "authentication/prisma-authjs-adapter.md",
+    "javascript-deep-dive.md",
+    "projects/virtual library/bug-report-missing-image-on-save-edit.md",
+    "typescript.md",
     "git.md",
     "code-anatomy/cloudinary-api-route.md",
     "code-anatomy/cloudinary-api-route.md~",
     "templates/code-anatomy.md",
     "templates/bug.md",
-    "templates/scratch.md",
     "templates/project.md",
     "templates/learn.md",
     "templates/daily.md",
@@ -216,18 +209,8 @@
     "c-memory-management.md",
     "Integration.md",
     "authentication/nextauthjs.md~",
-    "react-next.js.md",
-    "authentication/nextauthjs.md",
-    "Test 1.md",
-    "Programing Language/C/c-fundamentals.md",
-    "Bug/bug-prisma-p1000-user-denied.md",
     "projects/Library_webapp.md~",
-    "testing.md",
-    "Database/ORM/Prisma/prisma-entry-methods.md",
-    "http-rest-api.md",
     "xmlhttp-request.md~",
-    "xmlhttp-request.md",
-    "tailwindcss.md",
     "uni-courses/mth1101-calculus.md~"
   ]
 }

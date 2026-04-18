@@ -24,6 +24,7 @@ tags:
 - shadcn/ui
 - PostgreSQL
 - Prisma 7
+- Cloudinary
 
 ## tasks
 
@@ -86,6 +87,27 @@ tags:
     - [x] 04:11 Update method to handle new image upload
     - [x] 17:01 Add upload image UI
       [[bug-report-image-not-show-on-DB]]
+2026-04-04
+  - [x] 03:09 Polish upload function to handle existing URL properly
+      [[bug-report-missing-image-on-save-edit]]
+  - [x] 03:10 Sync DB with Cloudinary on both edit and delete the entry
+2026-04-05
+  - [x] 01:41 Back-end logic for multiple shelves
+  - [x] 17:52 Error handling for all Back-end logic
+2026-04-06
+  - [x] 14:51 Fix Front-end bug
+2026-04-08
+  - [ ] Complete front-end for multiple shelves
+    - [x] 16:05 Create new shelf modal
+    - [x] 16:04 Dropdown List of the shelf
+    - [x] 16:05 Fix the path navigation
+    - [x] Edit shelves
+    - [x] Delete shelves
+2026-04-11
+- [x] 16:56 Complete status header bar for landing page
+- [x] 19:37 Fix path bug where after editing or deleting entry it redirect to / instead of current path
+2026-04-17
+  - [ ] Responsiveness
   - [ ] Archive tab on non session placeholder
   - [ ] Curated tab on non session placeholder
   - [ ] Handle loading state

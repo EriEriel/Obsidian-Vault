@@ -1,5 +1,11 @@
+---
+id: typescript
+aliases: []
+tags:
+  - #learn #typescript #javascript #stub
+---
+
 # TypeScript
-#learn #typescript #javascript #stub
 
 ## what is it
 Typed superset of JavaScript — compiles to plain JS. Adds static type checking, interfaces, generics, and better tooling to JS.
@@ -70,5 +76,4 @@ Typed superset of JavaScript — compiles to plain JS. Adds static type checking
 
 ## links
 - [[javascript]]
-- [[react-next.js]]
 - [[testing]]
