@@ -2,8 +2,7 @@
 id: advance-prisma
 aliases: []
 tags:
-  - #prisma
-  - #learn
+  - sql
 ---
 
 # advance-prisma

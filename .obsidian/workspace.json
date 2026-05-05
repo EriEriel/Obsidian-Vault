@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c0e9bb5d8b10aec8",
+        "id": "1ccf679898d4f030",
         "type": "tabs",
         "children": [
           {
-            "id": "aba65c988167ff13",
+            "id": "10dfb27d62a23c0f",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "neovim",
+                "query": "type",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -177,8 +177,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "aba65c988167ff13",
+  "active": "10dfb27d62a23c0f",
   "lastOpenFiles": [
+    "typescript.md",
+    "Database/ORM/Prisma/advance-prisma.md",
     "neovim/luasnip.md~",
     "http-rest-api.md",
     "neovim/luasnip.md",
@@ -190,7 +192,6 @@
     "authentication/prisma-authjs-adapter.md",
     "javascript-deep-dive.md",
     "projects/virtual library/bug-report-missing-image-on-save-edit.md",
-    "typescript.md",
     "git.md",
     "code-anatomy/cloudinary-api-route.md",
     "code-anatomy/cloudinary-api-route.md~",

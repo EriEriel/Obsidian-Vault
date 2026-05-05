@@ -1,5 +1,14 @@
+---
+id: c-fundamentals
+aliases: []
+tags:
+  - C
+  - systems
+  - lowlevel
+---
+
 # C Programming Fundamentals
-2025-10-01  #learn #c #systems #lowlevel
+2025-10-01
 
 ## what is it
 Core C language reference — compilation, data types, operators, control flow, arrays, strings, pointers, memory, functions, structs, and bitwise operations.
@@ -415,4 +424,3 @@ A bitmask is a boolean array packed into bits — `flags & X` means "is X enable
 
 ## links
 - [[kilo-ansi-memory-c-internals]]
-- [[c-memory-management]]

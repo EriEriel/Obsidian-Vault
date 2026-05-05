@@ -1,5 +1,15 @@
+---
+id: testing
+aliases: []
+tags:
+  - learn
+  - testing
+  - javascript
+  - typescript
+  - stub
+---
+
 # Testing & Unit Tests
-#learn #testing #javascript #typescript #stub
 
 ## what is it
 Writing automated tests to verify code behaves correctly. Unit tests check individual functions/components in isolation. Integration tests check how pieces work together. E2E tests simulate real user flows.
@@ -59,3 +69,4 @@ Writing automated tests to verify code behaves correctly. Unit tests check indiv
 - [[javascript]]
 - [[react-next.js]]
 - [[http-rest-api]]
+- [[playwright]]

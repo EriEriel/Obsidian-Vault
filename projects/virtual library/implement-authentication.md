@@ -10,7 +10,7 @@ tags:
 2026-03-25
 
 ## goal
-- [ ] 2026-03-25 Implememt Authentication with stateless JWT strategy
+- [x] 2026-03-25 Implememt Authentication with stateless JWT strategy
   - [x] 16:22 Update prisma schema to support new Authentication feature
 
 ## approach
@@ -29,7 +29,7 @@ tags:
 6. Add `user.id` to the token so we can use it with server action to link user with entries
 
 ### GitHub OAuth
-For the GiHub OAuth go to [Github](https://github.com/) than setting -> developer settinf -> OAuth Apps -> New OAuth App and fill the form to get `GITHUB_CLIENT_ID` and github `GITHUB_CLIENT_SECRET` and put them in `.env`
+For the GiHub OAuth go to [Github](https://github.com/) than setting -> developer setting -> OAuth Apps -> New OAuth App and fill the form to get `GITHUB_CLIENT_ID` and github `GITHUB_CLIENT_SECRET` and put them in `.env`
 
 ### Google OAuth
 For the Google OAuth go to [Google cloud](https://console.cloud.google.com/) than APIs & Services -> OAuth consent -> Choose External(unless Using a one company) -> Fill the form

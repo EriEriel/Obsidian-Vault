@@ -2,7 +2,7 @@
 id: Library_webapp
 aliases: []
 tags:
-  - #project
+  - project
 ---
 
 # Library_webapp
@@ -97,37 +97,51 @@ tags:
 2026-04-06
   - [x] 14:51 Fix Front-end bug
 2026-04-08
-  - [ ] Complete front-end for multiple shelves
+  - [x] Complete front-end for multiple shelves
     - [x] 16:05 Create new shelf modal
     - [x] 16:04 Dropdown List of the shelf
     - [x] 16:05 Fix the path navigation
     - [x] Edit shelves
     - [x] Delete shelves
 2026-04-11
-- [x] 16:56 Complete status header bar for landing page
-- [x] 19:37 Fix path bug where after editing or deleting entry it redirect to / instead of current path
-2026-04-17
-  - [ ] Responsiveness
-  - [ ] Archive tab on non session placeholder
-  - [ ] Curated tab on non session placeholder
-  - [ ] Handle loading state
-  - [ ] Error handling when server actions fail
-  - [ ] Login & Register Error handling (like password length too short, username too long, invalid email format)
-  - [ ] Group search with tags when click on tags
-  - [ ] Get default title by enter the URL instead of typing it manually
-  - [ ] Polish UI to be more vibrant and appeal to user
-  - [ ] Delete tags form DB
+  - [x] 16:56 Complete status header bar for landing page
+  - [x] 19:37 Fix path bug where after editing or deleting entry it redirect to / instead of current path
+2026-04-19
+  - [x] 15:35 Complete Responsiveness
+    - [x] 13:19 Landing page
+    - [x] 13:43 Archive page and Curated page
+    - [x] 15:19 Log-in and Register page
+    - [x] 15:35 Shelf management
+  - [x] 15:19 Archive tab on non session placeholder
+  - [x] 15:19 Curated tab on non session placeholder
+  - [x] 16:05 More category selection
+  - [x] 16:05 Error handling when server actions fail
+  - [x] 20:05 Login & Register Error handling (like password length too short, username too long, invalid email format)
+  - [x] 20:05 Testing Auth guards to make sure user can't access server action without log-in or access other user's data
+  - [x] 20:05 Testing CRUD operations to make sure they work as expected
+2026-04-20
+ - [x] 13:53 Implement Auth guard for `shelfID` relate action to prevent IDOR attack
+  - [x] 21:58 Finish all the testing checklist
+2026-04-23
+  - [x] Learn about docker and containerization to prepare for deployment
+2026-04-26
+  - [x] Document about docker and update README for deployment
+  - [ ] Update README with demo video and screenshots
+  - [ ] Hosting DB on cloud and connect to the app
+  - [ ] **Optional** Group search with tags when click on tags
+  - [ ] **Optional** Get default title by enter the URL instead of typing it manually
+  - [ ] **Optional** Delete tags form DB
 
 ### to learn more
 
 - [x] many to many relationship in depth
 - [x] prisma 7 on how to handle many to many relationship
-- [ ] learn more about Cloudinary
+- [x] learn more about Cloudinary
 
 ## notes
 
 2026-03-18
-  Currently still can't host database on local due to [Supabase](https://supabase.com/dashboard/org/bkfeizeagpqgwwsfiapz) free tier require IPv6 to migrate db on cloud, See more at [[bug-prisma-p1000-user-denied]]
+  Currently still can't host database on local due to [Supabase](https://supabase.com/dashboard/org/bkfeizeagpqgwwsfiapz) free tier require IPv6 to migrate db on cloud, See more at
 2026-03-23
   When delete entry tags is still sit in the Tag table
   2026-03-31

@@ -23,6 +23,8 @@ tags:
 - Fast Delivery: It uses a Content Delivery Network (CDN) to serve files from a server physically close to your user.
 
 - Signed and unsigned upload upload preset: upload preset is a collection of settings (like folder destination, image resizing, or format conversion) that can define once and apply to every file uploaded using that preset
+  * Unsigned preset — the preset name is exposed in client-side code. Anyone who finds it can upload directly to your Cloudinary account without any server involvement. Fine for public/low-risk uploads, but you have zero control over who is uploading.
+  * Signed upload — the client never touches Cloudinary directly. Your server generates a signature using your api_secret (which stays server-side), the client sends the file to Cloudinary with that signature, and Cloudinary verifies it came from your server before accepting it.
 
 | Feature | Unsigned | Signed | 
 | -------------- | --------------- | --------------- |
